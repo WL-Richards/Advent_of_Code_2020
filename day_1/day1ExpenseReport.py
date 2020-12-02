@@ -19,7 +19,7 @@ def three_entry_2020_sum(lines):
                 if int(line) + int(line_1) + int(line_2) == 2020:
                     print("Three Entry Answer: " + str(int(line) * int(line_1) * int(line_2)))
                     return None
-
+2
 
 if __name__ == '__main__':
     input_file = open("input.txt")
