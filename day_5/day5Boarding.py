@@ -4,7 +4,6 @@ def get_seat_ids(lines):
     seat_ids = []
 
     for line in lines:
-        line = line.strip()
         row_range = (0, 127)
         column_range = (0, 7)
         column_num = 0
@@ -51,6 +50,7 @@ def part_2(lines):
 if __name__ == '__main__':
     input_file = open("input.txt")
     lines = input_file.readlines()
+    lines = list(map(str.strip, lines))
 
     print(f"Part 1 Solution: Highest Seat # is {part_1(lines)}")
     print(f"Part 2 Solution: My Seat # is {part_2(lines)}")
